@@ -1,0 +1,21 @@
+{
+  "name": "voice-relay",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "check": "biome check . && tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome lint .",
+    "format": "biome format --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.4",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.12"
+  },
+  "packageManager": "pnpm@11.20.0"
+}
