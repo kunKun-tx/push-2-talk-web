@@ -58,6 +58,10 @@ Biome handles formatting and linting. Run `pnpm format` to apply formatting, `pn
 
 Deploy `dist/` to a static HTTPS host. No server-side runtime is required.
 
+### Cloudflare Workers
+
+The repository includes a `wrangler.jsonc` static-assets configuration. In Cloudflare Builds, use `pnpm build` as the build command and `pnpm exec wrangler deploy` as the deploy command. You can also run `pnpm deploy` locally to build and deploy in one step.
+
 ## Limitations
 
 - The app cannot pair a speaker, select a Bluetooth output, detect Bluetooth status reliably, or prevent the operating system from changing routes.

@@ -10,12 +10,14 @@
     "check": "biome check . && tsc --noEmit",
     "typecheck": "tsc --noEmit",
     "lint": "biome lint .",
-    "format": "biome format --write ."
+    "format": "biome format --write .",
+    "deploy": "pnpm build && wrangler deploy"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.6.4",
     "typescript": "^5.9.3",
-    "vite": "^7.1.12"
+    "vite": "^7.1.12",
+    "wrangler": "4.156.0"
   },
   "packageManager": "pnpm@11.20.0"
 }
